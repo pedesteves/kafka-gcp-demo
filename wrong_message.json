@@ -1,0 +1,16 @@
+{
+	 "transaction_time": "2021-03-11 15:14:54",
+	  "f_name": "Luis",
+	  "m_name": "B",
+	   "lname": "Rodrigues",
+	    "skus": [
+		       {
+			            "pname": "iPad",
+				         "price": 345.5
+					    },
+					       {
+						            "pname": "pixelbook",
+							         "price": 105
+								    }
+								     ]
+}
