@@ -1,6 +1,7 @@
 export PROJECT=generic-demos
 export REGION=us-central1
 export BUCKET_NAME=gs://kafka-bq-dataflow
+export SUBNETWORK_NAME=vpc-name
 export OUTPUT_TABLE=${PROJECT}:kafka_to_bigquery.transactions
 export JS_PATH=${BUCKET_NAME}/my_function.js
 export JS_FUNC_NAME=transform
@@ -18,5 +19,6 @@ outputTableSpec=$OUTPUT_TABLE,\
 inputTopics=$TOPICS,\
 javascriptTextTransformGcsPath=$JS_PATH,\
 javascriptTextTransformFunctionName=$JS_FUNC_NAME,\
-bootstrapServers=$BOOTSTRAP
+bootstrapServers=$BOOTSTRAP,\
+subnetwork=https://www.googleapis.com/compute/v1/projects/$PROJECT/regions/$REGION/subnetworks/$SUBNETWORK_NAME
   
